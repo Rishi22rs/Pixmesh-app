@@ -2,17 +2,17 @@ import { useTheme } from '@react-navigation/native'
 import React, { useContext } from 'react'
 import { View,Text,StyleSheet, Image } from 'react-native'
 
-const AppBar=({titlePt1="pix",titlePt2="mesh"})=>{
+const AppBar=({titlePt1="pix",titlePt2="mesh",hideProfileIcon=false})=>{
 
   const {colors}=useTheme()
 
   return (
     <View style={styles.container}>
-      <View style={styles.titleContainer}><Text style={[{color:colors.titleColor.orange},styles.title]}>{titlePt1}</Text><Text style={[{color:colors.titleColor.grey},styles.title]}>{titlePt2}}</Text></View>
-      <View style={[styles.profileContainer,{backgroundColor:colors.titleColor.orange}]}>
+      <View style={styles.titleContainer}><Text style={[{color:colors.titleColor.orange},styles.title]}>{titlePt1}</Text><Text style={[{color:colors.titleColor.grey},styles.title]}>{titlePt2}</Text></View>
+      {!hideProfileIcon&&<View style={[styles.profileContainer,{backgroundColor:colors.titleColor.orange}]}>
         <Image source={{uri:"https://blackpinkupdate.com/wp-content/uploads/2018/06/blackpink-rose-instagram-photo-roses-are-rosie-cute.jpg"}} style={styles.profileImg}/>
         <Text style={[{color:colors.titleColor.white},styles.profileText]}>Rosie</Text>
-      </View>
+      </View>}
     </View>
   )
 }
@@ -25,7 +25,8 @@ const styles=StyleSheet.create({
     alignItems:"center",
     paddingLeft:30,
     paddingRight:20,
-    paddingTop:10
+    paddingTop:10,
+    height:50
   },  
   titleContainer:{
     display:'flex',
