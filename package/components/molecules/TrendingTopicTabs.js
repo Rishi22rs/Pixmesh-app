@@ -18,7 +18,7 @@ const TrendingTopicTabs=({data=[{active:true,tag:"trending"},{active:false,tag:"
 
 const styles=StyleSheet.create({
   tabs:{
-    padding:10  
+    padding:5, 
   }
 })
 

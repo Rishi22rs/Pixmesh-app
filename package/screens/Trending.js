@@ -9,7 +9,7 @@ const Trending =()=>{
     <View>
       <AppBar titlePt1="tren" titlePt2="ding" hideProfileIcon={true}/>
       <View>
-        <View style={{height:60}}>
+        <View style={{height:55}}>
           <TrendingTopicTabs />
         </View>
         <ImageGallery/>

@@ -51,9 +51,8 @@ const VotingImgCard=({source,imgRadius={
 
 const styles=StyleSheet.create({
   imgBackground:{
-    height:(Dimensions.get("window").height/2)-60,
-    width:Dimensions.get("window").width-20,
-    marginBottom:10,
+    height:(Dimensions.get("window").height/2)-55,
+    width:Dimensions.get("window").width,
   },
   profileImg:{
     height:40,
@@ -61,11 +60,11 @@ const styles=StyleSheet.create({
     borderRadius:50
   },
   detailContainer:{
-    top:(Dimensions.get("window").height/2)-205,
-    padding:20,
+    top:(Dimensions.get("window").height/2)-190,
+    padding:15,
   },
   gradient:{
-    height:(Dimensions.get("window").height/2)-60
+    height:(Dimensions.get("window").height/2)-55
   },
   profileImgNameContainer:{
     display:'flex',

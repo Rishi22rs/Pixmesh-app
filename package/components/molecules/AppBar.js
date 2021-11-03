@@ -26,7 +26,7 @@ const styles=StyleSheet.create({
     paddingLeft:30,
     paddingRight:20,
     paddingTop:10,
-    height:40,
+    height:45,
     marginBottom:10
   },  
   titleContainer:{
