@@ -1,9 +1,13 @@
 import React from 'react'
-import {Text} from 'react-native'
+import {Text, View} from 'react-native'
+import AppBar from '../components/molecules/AppBar'
 
 const Profile =()=>{
   return(
-    <Text>Profile Page</Text>
+    <View>
+      <AppBar titlePt1="Rosie" hideProfileIcon={true}/>
+      
+    </View>
   )
 }
 

@@ -2,7 +2,7 @@ import { useTheme } from '@react-navigation/native'
 import React, { useContext } from 'react'
 import { View,Text,StyleSheet, Image } from 'react-native'
 
-const AppBar=({titlePt1="pix",titlePt2="mesh",hideProfileIcon=false})=>{
+const AppBar=({titlePt1="",titlePt2="",hideProfileIcon=false})=>{
 
   const {colors}=useTheme()
 
@@ -26,7 +26,8 @@ const styles=StyleSheet.create({
     paddingLeft:30,
     paddingRight:20,
     paddingTop:10,
-    height:50
+    height:40,
+    marginBottom:10
   },  
   titleContainer:{
     display:'flex',

@@ -1,9 +1,13 @@
 import React from 'react'
-import {Text} from 'react-native'
+import {Text, View} from 'react-native'
+import AppBar from '../components/molecules/AppBar'
 
 const Leaderboard =()=>{
   return(
-    <Text>Leaderboard Page</Text>
+    <View>
+      <AppBar titlePt1="leader" titlePt2="board" hideProfileIcon={true}/>
+      
+    </View>
   )
 }
 

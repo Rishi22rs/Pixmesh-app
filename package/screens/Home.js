@@ -6,7 +6,7 @@ import VotingImgCard from '../components/molecules/VotingImgCards'
 const Home =()=>{
   return(
     <View>
-      <AppBar/>
+      <AppBar titlePt1="pix" titlePt2="mesh"/>
         <View style={styles.imgContainer}>
           <VotingImgCard 
             source="https://qph.fs.quoracdn.net/main-qimg-71989a620680f673573dd918614fe2ba"
@@ -31,9 +31,7 @@ const styles=StyleSheet.create({
   imgContainer:{
     display:"flex",
     justifyContent:'center',
-    alignItems:"center",
-    marginTop:10
-
+    alignItems:"center"
   }
 })
 
